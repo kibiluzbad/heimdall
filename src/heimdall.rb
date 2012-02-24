@@ -1,6 +1,9 @@
 require 'fssm'
 require 'logger'
 require 'httparty'
+require 'yaml'
+
+CONFIG = YAML.load_file("#{File.dirname(__FILE__)}/config.yml") unless defined? CONFIG
 
 log = Logger.new("application.log")
 
@@ -11,7 +14,7 @@ class MoviesCatalog
 end
 
 begin
-	FSSM.monitor("/home/leonardo/temp/","**",:directories=>true) do
+	FSSM.monitor(CONFIG["path"],CONFIG["pattern"],:directories=>true) do
 	create do |base,relative,type| 
 		if type == :directory
 			log.info("Creating #{relative}")  	
