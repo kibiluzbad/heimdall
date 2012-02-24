@@ -1,16 +1,105 @@
-# Logfile created on 2012-01-29 00:03:28 -0300 by logger.rb/25413
-I, [2012-01-29T15:09:37.143812 #6938]  INFO -- : Deleting In Time
-I, [2012-01-29T15:09:37.144071 #6938]  INFO -- : Deleted In Time
-I, [2012-01-29T15:09:50.644937 #6938]  INFO -- : Creating In Time
-I, [2012-01-29T15:09:50.645092 #6938]  INFO -- : Created In Time
-F, [2012-01-29T15:12:58.739023 #6938] FATAL -- : No such file or directory - /home/leonardo/temp2 (FSSM::FileNotFoundError)
-/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/path.rb:86:in `set_path'
-/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/path.rb:4:in `initialize'
-/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/monitor.rb:32:in `new'
-/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/monitor.rb:32:in `create_path'
-/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/monitor.rb:8:in `path'
-/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm.rb:68:in `monitor'
-heimdall.rb:7:in `<top (required)>'
+I, [2012-02-24T10:05:55.471942 #10625]  INFO -- : Creating inception
+F, [2012-02-24T10:05:55.700715 #10625] FATAL -- : create - //home/leonardo/temp/inception: 710: unexpected token at '<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      font-size: 11px;
+    }
+
+    a { color: #000; }
+    a:visited { color: #666; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>Routing Error</h1>
+<p><pre>No route matches &quot;/movies/create&quot;</pre></p>
+
+
+
+</body>
+</html>
+' (FSSM::CallbackError)
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/json/common.rb:146:in `parse'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/json/common.rb:146:in `parse'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/multi_json-1.0.4/lib/multi_json/engines/json_common.rb:9:in `decode'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/multi_json-1.0.4/lib/multi_json.rb:76:in `decode'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/httparty-0.8.1/lib/httparty/parser.rb:116:in `json'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/httparty-0.8.1/lib/httparty/parser.rb:136:in `parse_supported_format'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/httparty-0.8.1/lib/httparty/parser.rb:103:in `parse'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/httparty-0.8.1/lib/httparty/parser.rb:66:in `call'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/httparty-0.8.1/lib/httparty/request.rb:222:in `parse_response'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/httparty-0.8.1/lib/httparty/request.rb:192:in `handle_response'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/httparty-0.8.1/lib/httparty/request.rb:75:in `perform'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/httparty-0.8.1/lib/httparty.rb:391:in `perform_request'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/httparty-0.8.1/lib/httparty.rb:359:in `post'
+heimdall.rb:18:in `block (2 levels) in <top (required)>'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/path.rb:73:in `call'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/path.rb:73:in `run_callback'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/path.rb:55:in `callback_action'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/path.rb:31:in `create'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb:26:in `block in created'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb:25:in `each'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb:25:in `created'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb:17:in `refresh'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:17:in `each'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:17:in `block in run'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:15:in `loop'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:15:in `run'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/monitor.rb:26:in `run'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm.rb:70:in `monitor'
+heimdall.rb:14:in `<top (required)>'
+(irb):1:in `load'
+(irb):1:in `irb_binding'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb/workspace.rb:80:in `eval'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb/workspace.rb:80:in `evaluate'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb/context.rb:254:in `evaluate'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb.rb:159:in `block (2 levels) in eval_input'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb.rb:273:in `signal_status'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb.rb:156:in `block in eval_input'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb/ruby-lex.rb:243:in `block (2 levels) in each_top_level_statement'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb/ruby-lex.rb:229:in `loop'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb/ruby-lex.rb:229:in `block in each_top_level_statement'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb/ruby-lex.rb:228:in `catch'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb/ruby-lex.rb:228:in `each_top_level_statement'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb.rb:155:in `eval_input'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb.rb:70:in `block in start'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb.rb:69:in `catch'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb.rb:69:in `start'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/bin/irb:16:in `<main>'
+I, [2012-02-24T10:07:48.758261 #10625]  INFO -- : Creating inception
+F, [2012-02-24T10:07:51.896460 #10625] FATAL -- : create - //home/leonardo/temp/inception: undefined method `reponse' for #<HTTParty::Response:0x0000000239cd38> (FSSM::CallbackError)
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/httparty-0.8.1/lib/httparty/response.rb:81:in `method_missing'
+heimdall.rb:19:in `block (2 levels) in <top (required)>'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/path.rb:73:in `call'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/path.rb:73:in `run_callback'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/path.rb:55:in `callback_action'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/path.rb:31:in `create'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb:26:in `block in created'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb:25:in `each'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb:25:in `created'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb:17:in `refresh'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:17:in `each'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:17:in `block in run'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:15:in `loop'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:15:in `run'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/monitor.rb:26:in `run'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm.rb:70:in `monitor'
+heimdall.rb:14:in `<top (required)>'
 (irb):2:in `load'
 (irb):2:in `irb_binding'
 /home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb/workspace.rb:80:in `eval'
@@ -29,16 +118,20 @@ heimdall.rb:7:in `<top (required)>'
 /home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb.rb:69:in `catch'
 /home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb.rb:69:in `start'
 /home/leonardo/.rvm/rubies/ruby-1.9.2-p290/bin/irb:16:in `<main>'
-I, [2012-01-29T15:13:54.954177 #6938]  INFO -- : Deleting In Time
-I, [2012-01-29T15:13:54.954360 #6938]  INFO -- : Deleted In Time
-F, [2012-01-29T15:59:44.651480 #6938] FATAL -- : SIGHUP (SignalException)
+I, [2012-02-24T10:10:18.149423 #10625]  INFO -- : Creating black swan
+I, [2012-02-24T10:15:59.875203 #10625]  INFO -- : Creating fight club
+F, [2012-02-24T10:17:00.959365 #10625] FATAL -- : abort then interrupt!! (IRB::Abort)
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb.rb:88:in `irb_abort'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb.rb:257:in `signal_handle'
+/home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb.rb:65:in `block in start'
+/home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:19:in `call'
 /home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:19:in `sleep'
 /home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:19:in `block in run'
 /home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:15:in `loop'
 /home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:15:in `run'
 /home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm/monitor.rb:26:in `run'
 /home/leonardo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.8.1/lib/fssm.rb:70:in `monitor'
-heimdall.rb:7:in `<top (required)>'
+heimdall.rb:14:in `<top (required)>'
 (irb):3:in `load'
 (irb):3:in `irb_binding'
 /home/leonardo/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/irb/workspace.rb:80:in `eval'

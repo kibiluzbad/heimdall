@@ -15,15 +15,17 @@ begin
 	create do |base,relative,type| 
 		if type == :directory
 			log.info("Creating #{relative}")  	
-			result = MoviesCatalog.post("/movies/create", :body => {:names => [relative]})
-			log.info("Created #{relative}") if result && result.reponse.body == "success"
+			result = MoviesCatalog.post("/movies/new", :body => {:names => [relative]})
+			#TODO: Convert body to josn to get the result
+			log.info("Created #{relative}") if result && result.response.body == "success"
 		end 
 	end
 	delete do |base,relative,type|
 		if type == :directory
 			log.info("Deleting #{relative}")
 			result = MoviesCatalog.delete("/movies/destroy", :body => {:name => relative})
-			log.info("Deleted #{relative}") if result && result.reponse.body == "success"
+			#TODO: Convert body to josn to get the result 
+			log.info("Deleted #{relative}") if result && result.response.body == "success"
 		end
 	end
 	update {|base,relative,type| }#Don't do nothing

@@ -2,9 +2,15 @@ GEM
   remote: http://rubygems.org/
   specs:
     fssm (0.2.8.1)
+    httparty (0.8.1)
+      multi_json
+      multi_xml
+    multi_json (1.0.4)
+    multi_xml (0.4.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   fssm
+  httparty
